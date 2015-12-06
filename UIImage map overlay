@@ -1,0 +1,20 @@
+#import <Foundation/Foundation.h>
+@import MapKit;
+
+@interface Map Overlay : NSObject
+
+@property (nonatomic, readonly) MKMapRect overlayBoundingMapRect;
+
+@property (nonatomic, readonly) CLLocationCoordinate2D centerCoord;
+
+@property (nonatomic, readonly) CLLocationCoordinate2D overlayTopLeftCoordinate;
+
+@property (nonatomic, readonly) CLLocationCoordinate2D overlayTopRightCoordinate;
+
+@property (nonatomic, readonly) CLLocationCoordinate2D overlayBottomLeftCoordinate;
+
+@property (nonatomic, readonly) CLLocationCoordinate2D overlayBottomRightCoordinate;
+
+- (instancetype)initWithName:(NSString *)name;
+
+@end
